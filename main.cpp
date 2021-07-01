@@ -35,4 +35,49 @@ void inicializaLista(tLista* pLista){
   pLista -> tamanho = 0;
 }
 
-int
+ obterTamanho(tLista* pLista){
+  return pLista->tamanho;
+}
+bool listaVazia(tLista* pLista){
+  return (pLista -> tamanho == 0);
+}
+
+bool finalLista(tLista* pLista){
+  return (pLista->marcador == NULL);
+}
+
+void incluirNoFim(tLista* pLista, int info){
+  tComplexos* Complex;
+  Complex = criaComplex(info);
+
+  if(listaVazia(pLista)){
+    pLista -> primeiro = Complex;
+  }
+else{
+    pLista -> ultimo -> proximo = Complex;
+  }
+
+  pLista -> ultimo = Complex;
+  pLista -> marcador = Complex;
+  pLista -> tamanho ++;
+}
+
+int main() {
+  
+  int opt, Real, imag;
+  
+ofstream Gravar;
+ifstream Ler;
+
+cout<< "Deseja digitar digitar os números complexos?(digite 1 para SIM e 2 paga NÃO :"<<endl;
+cin>> opt<< endl;
+
+while (opt==1){
+  
+  cout<<"Digite a parte REAL do número complexo"<<endl;
+  cin>> Real<<endl;
+  
+  cout<<"Digite a parte IMAGINARIA do numero complexo"<<endl;
+  cin>> imag<<endl;
+  }
+}
