@@ -79,5 +79,8 @@ while (opt==1){
   
   cout<<"Digite a parte IMAGINARIA do numero complexo"<<endl;
   cin>> imag<<endl;
+  
+  cout<<"Deseja continuar digitando? (se SIM parte 1, se NÃO,aperte 2)"<<endl;
+  cin>>opt<<endl;
   }
 }
