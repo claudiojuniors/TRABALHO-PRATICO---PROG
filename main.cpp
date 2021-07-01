@@ -21,3 +21,18 @@ tComplexos* criaComplex(int item){
 
   return Complex;
 }
+ tComplexos* primeiro;
+struct tLista{
+  tComplexos* ultimo;
+  tComplexos* marcador;
+  int tamanho;
+};
+
+void inicializaLista(tLista* pLista){
+  pLista -> primeiro = NULL;
+  pLista -> ultimo = NULL;
+  pLista -> marcador = NULL;
+  pLista -> tamanho = 0;
+}
+
+int
