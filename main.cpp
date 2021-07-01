@@ -69,6 +69,9 @@ int main() {
 ofstream Gravar;
 ifstream Ler;
 
+tLista* Complexos = new tLista;
+
+inicializaLista(Complexos)
 
 if (opt==1){
 
@@ -77,8 +80,11 @@ while (opt==1){
   cout<<"Digite a parte REAL do número complexo"<<endl;
   cin>> Real<<endl;
   
+  
   cout<<"Digite a parte IMAGINARIA do numero complexo"<<endl;
   cin>> imag<<endl;
+  
+  incluirNoFim(Real, imag);
   
   cout<<"Deseja continuar digitando? (se SIM aperte 1, se NÃO,aperte 2)"<<endl;
   cin>>opt<<endl;
