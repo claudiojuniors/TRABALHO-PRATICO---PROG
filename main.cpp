@@ -64,13 +64,13 @@ else{
 
 int main() {
   
-  int opt, Real, imag;
+  int opt=1, Real, imag;
   
 ofstream Gravar;
 ifstream Ler;
 
-cout<< "Deseja digitar digitar os números complexos?(digite 1 para SIM e 2 paga NÃO :"<<endl;
-cin>> opt<< endl;
+
+if (opt==1){
 
 while (opt==1){
   
@@ -80,7 +80,13 @@ while (opt==1){
   cout<<"Digite a parte IMAGINARIA do numero complexo"<<endl;
   cin>> imag<<endl;
   
-  cout<<"Deseja continuar digitando? (se SIM parte 1, se NÃO,aperte 2)"<<endl;
+  cout<<"Deseja continuar digitando? (se SIM aperte 1, se NÃO,aperte 2)"<<endl;
   cin>>opt<<endl;
+    }
+  }else {
+   Gravar.open("Complexos.txt",ios::out);
+   
+ 
+    } 
   }
 }
