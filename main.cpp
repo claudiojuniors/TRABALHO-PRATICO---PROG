@@ -21,5 +21,3 @@ tComplexos* criaComplex(int item){
 
   return Complex;
 }
-
- 
