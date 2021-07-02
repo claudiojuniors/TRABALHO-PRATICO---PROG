@@ -60,6 +60,15 @@ void incluirNoFim(tLista *pLista, int info) {
 	pLista->tamanho++;
 }
 
+void imprimirLista(tLista* pLista){
+  pLista->marcador = pLista->primeiro;
+
+  while(!finalLista(pLista)){
+    int informacao = pLista->marcador->info;
+    cout << "A informacao eh: " << informacao << endl;
+    
+    pLista->marcador = pLista->marcador->proximo;
+  }
 int main() {
 	int opt, Real, imag;
 
