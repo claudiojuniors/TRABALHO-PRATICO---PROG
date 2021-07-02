@@ -20,8 +20,9 @@ tComplexos *criaComplex(int item) {
 
 	return Complex;
 }
-tComplexos *primeiro;
+
 struct tLista {
+  tComplexos *primeiro;
 	tComplexos *ultimo;
 	tComplexos *marcador;
 	int tamanho;
@@ -106,6 +107,7 @@ int main() {
 
 	else {
 		Ler.open("Complexos.txt", ios::in);
+	 Ler->imprimirLista();
 	}
 	Ler.close();
 }
