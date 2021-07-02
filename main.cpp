@@ -69,6 +69,7 @@ void imprimirLista(tLista* pLista){
     
     pLista->marcador = pLista->marcador->proximo;
   }
+}
 int main() {
 	int opt, Real, imag;
 
