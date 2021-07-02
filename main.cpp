@@ -105,7 +105,7 @@ int main() {
 	}
 	Gravar.close();
 
-	else {
+	else (opt==2){
 		Ler.open("Complexos.txt", ios::in);
 	 Ler->imprimirLista();
 	}
