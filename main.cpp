@@ -64,16 +64,23 @@ else{
 
 int main() {
   
-  int opt=1, Real, imag;
+  int opt, Real, imag;
   
 ofstream Gravar;
 ifstream Ler;
 
 tLista* Complexos = new tLista;
 
-inicializaLista(Complexos)
+inicializaLista(Complexos);
+
+cout<<"Digite 1 se quiser gravar o arquivo, digite 2 para ler o arquivo"<<endl;
+cin>>opt<<endl;
+   
 
 if (opt==1){
+  
+Gravar.open("Complexos.txt",ios::out);
+   
 
 while (opt==1){
   
@@ -89,8 +96,9 @@ while (opt==1){
   cout<<"Deseja continuar digitando? (se SIM aperte 1, se NÃO,aperte 2)"<<endl;
   cin>>opt<<endl;
     }
-  }else {
-   Gravar.open("Complexos.txt",ios::out);
+  }Gravar.close();
+  
+  else {
    
  
     } 
