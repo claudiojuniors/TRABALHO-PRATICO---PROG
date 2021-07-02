@@ -98,9 +98,9 @@ while (opt==1){
     }
   }Gravar.close();
   
-  else {
-   
- 
+ else{
+Ler.open("Complexos.txt", ios::in);
+
+  }Ler.close();
     } 
-  }
-}
+  
