@@ -94,7 +94,7 @@ int main (){
 			cout << "Digite a parte IMAGINARIA do numero complexo" << endl;
 			cin >>imag;
 
-			incluirNoFim(Real, imag);
+			//incluirNoFim(Real, imag);
 
 			cout << "Deseja continuar digitando? (se SIM aperte 1, se "
 					"NÃO,aperte 2)"
