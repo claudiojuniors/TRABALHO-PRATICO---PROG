@@ -92,7 +92,7 @@ int main (){
 			cin >> Real << endl;
 
 			cout << "Digite a parte IMAGINARIA do numero complexo" << endl;
-			cin >> imag << endl;
+			cin >>imag << endl;
 
 			incluirNoFim(Real, imag);
 
