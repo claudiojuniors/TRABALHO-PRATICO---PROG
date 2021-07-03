@@ -70,8 +70,8 @@ void imprimirLista(tLista* pLista){
 
 int main (){
     
-	int opcao, Real, imag;
-
+	int opcao,numeros, Real, imag;
+  char ComplexInt;
 	ofstream Gravar;
 	ifstream Ler;
 
@@ -85,23 +85,27 @@ int main (){
 	cin >> opcao;
 
 	if (opcao == 1) {
-		Gravar.open("Complexos.txt", ios::out);
+	  
+	  cout<<"Quantos números quer gravar?: "<<endl;
+	  cin>>numeros;
+	  
+		Gravar.open("Complexos.txt", ios::app);
 
-		while (opcao == 1) {
+		for (int i=0; i<numeros;i++) {
 			cout << "Digite a parte REAL do número complexo" << endl;
 			cin >> Real;
 
 			cout << "Digite a parte IMAGINARIA do numero complexo" << endl;
 			cin >>imag;
 
-			//incluirNoFim(Real, imag);
+       ComplexInt=Real&&imag;
+       
+			incluirNoFim(Complexos,ComplexInt);
 
-			cout << "Deseja continuar digitando? (se SIM aperte 1, se "
-					"NÃO,aperte 2)"
-				 << endl;
-			cin >> opcao;
+			
 		}
-		Gravar<<Real<<"+"<<imag<<"i"<<endl;
+					
+			Gravar<<ComplexInt<<"i"<<endl;
 	}
 	Gravar.close();
 
