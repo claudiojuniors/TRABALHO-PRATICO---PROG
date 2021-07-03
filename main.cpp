@@ -35,7 +35,7 @@ void inicializaLista(tLista *pLista) {
 	pLista->tamanho = 0;
 }
 
-obterTamanho(tLista *pLista) {
+bool obterTamanho(tLista *pLista) {
 	return pLista->tamanho;
 }
 bool listaVazia(tLista *pLista) {
