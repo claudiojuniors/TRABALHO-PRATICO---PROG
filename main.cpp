@@ -89,7 +89,7 @@ int main (){
 	  cout<<"Quantos números quer gravar?: "<<endl;
 	  cin>>numeros;
 	  
-		Gravar.open("Complexos.txt", ios::app);
+		Gravar.open("Complexos.txt", ios::out);
 
 		for (int i=0; i<numeros;i++) {
 			cout << "Digite a parte REAL do número complexo" << endl;
@@ -98,14 +98,13 @@ int main (){
 			cout << "Digite a parte IMAGINARIA do numero complexo" << endl;
 			cin >>imag;
 
-       ComplexInt=Real&&imag;
+       //ComplexInt=Real&&imag;
        
-			incluirNoFim(Complexos,ComplexInt);
-
+			incluirNoFim(Complexos,Real);
 			
 		}
 					
-			Gravar<<ComplexInt<<"i"<<endl;
+			Gravar<<Real<<"+"<<imag<<"i"<<endl;
 	}
 	Gravar.close();
 
