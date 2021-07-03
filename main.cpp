@@ -1,11 +1,11 @@
-#include <fstream>
+/*#include <fstream>
 #include <iostream>
 using namespace std;
 
 /*struct tComplexos{
 	  float *real;
 	  float *imag;
-	};*/
+	};
 
 struct tComplexos {
 	int info;
@@ -105,9 +105,9 @@ int main() {
 	}
 	Gravar.close();
 
-	else (opt==2){
+	if (opt==2){
 		Ler.open("Complexos.txt", ios::in);
-	 Ler->imprimirLista();
+	 imprimirLista();
 	}
 	Ler.close();
-}
+}*/
